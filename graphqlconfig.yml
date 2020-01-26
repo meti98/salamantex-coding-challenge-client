@@ -1,0 +1,6 @@
+projects:
+  app: 
+    schemaPath: ../salamantex-coding-challenge-server/src/generated/schema.graphql
+    includes: ['**/*.tsx']
+    extensions:
+      default: http://localhost:4000

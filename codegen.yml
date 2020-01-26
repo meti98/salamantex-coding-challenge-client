@@ -1,0 +1,14 @@
+schema: ../salamantex-coding-challenge-server/src/generated/schema.graphql
+documents: './src/**/*.{tsx,ts}'
+overwrite: true
+generates:
+  ./src/graphql/types.tsx:
+    plugins:
+      - add: '/* eslint-disable */'
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      withHOC: false
+      withHooks: true
+      withComponent: false
